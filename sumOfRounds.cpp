@@ -9,6 +9,11 @@ int main(){
         {
             cin >> arr[i];
         }
+        for (int i = 0; i < t; i++)
+        {
+           
+        }
+        
         
     }
 }

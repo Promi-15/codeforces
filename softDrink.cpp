@@ -4,7 +4,7 @@ int main(){
     int n, k, l, c, d, nl, np, p;
     cin >> n >> k >> l >> c >> d >> p >> nl >> np;
     // int totalDrink = k * l;
-    int toasto = (k * l )/ n;
+    int toasto = (k * l )/ nl;
     // cout << toasto << endl;
     // cout <<  " c" << c << "d " << d;
     int toasttw = c * d;

@@ -1,26 +1,33 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int n , s =0 , d = 0;
+int main()
+{
+    int n, s = 0, d = 0;
     cin >> n;
     int arr[n];
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    std::sort(arr, arr + n);
+    int left = 0, right = n - 1, x = 0;
+    bool turn = true;
     for (int i = 0; i < n; i++)
     {
-        if(i%2==0){
-            s += arr[i];
-            // cout << "s " << s;
+        if (arr[left] < arr[right])
+        {
+            x = arr[right];
+            right--;
         }
         else
-            d += arr[i];
-            // cout << d <<"d " ;
+        {
+            x = arr[left];
+            left++;
+        }
+        turn = false;
+        if (turn)
+            s += x;
+        else
+            d += x;
     }
-       if(s>d)
     cout << s << " " << d << endl;
-    else
-    cout << d << " " << s << endl; 
 }

@@ -23,3 +23,11 @@ int main()
         cout << shovelCount << endl;
     }
 }
+/*
+
+1, 2, 3, 4, 5, .. n * shovelCount
+
+7, 7
+
+15, 1, 2 3, 
+*/

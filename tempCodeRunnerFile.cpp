@@ -1,3 +1,1 @@
- // if (s == "yes" )
-        //     // cout << "YES" << endl;
-        // else
+ pow(5, n)

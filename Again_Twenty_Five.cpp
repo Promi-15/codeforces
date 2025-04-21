@@ -1,8 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    double n;
+    long long n;
     cin >>n;
-    double res = pow(5, n);
-    cout << res << endl;
+    cout << 25 << endl;
 }

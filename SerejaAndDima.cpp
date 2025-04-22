@@ -17,13 +17,17 @@ int main()
         {
             x = arr[right];
             right--;
+            turn = false;
+            cout <<"t" << x << endl;
         }
         else
         {
             x = arr[left];
             left++;
+            turn = false;
+            cout <<"f" << x << endl;
         }
-        turn = false;
+       
         if (turn)
             s += x;
         else

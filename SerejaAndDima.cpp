@@ -9,29 +9,20 @@ int main()
     {
         cin >> arr[i];
     }
-    int left = 0, right = n - 1, x = 0;
-    bool turn = true;
-    for (int i = 0; i < n; i++)
-    {
-        if (arr[left] < arr[right])
+    int l = 0, r = n - 1;
+    bool isSereja = true;
+    while(l <= r) {
+        if (isSereja)
         {
-            x = arr[right];
-            right--;
-            turn = false;
-            cout <<"t" << x << endl;
+            s = s + max(arr[l], arr[r]);
+            isSereja = false;
+        } else {
+            d = d + max(arr[l], arr[r]);
+            isSereja = true;
         }
-        else
-        {
-            x = arr[left];
-            left++;
-            turn = false;
-            cout <<"f" << x << endl;
-        }
-       
-        if (turn)
-            s += x;
-        else
-            d += x;
+        if(arr[l] > arr[r]) {
+            l++;
+        }else r--;
     }
     cout << s << " " << d << endl;
 }
